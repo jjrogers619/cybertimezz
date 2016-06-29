@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://www.cybertimez.com/news -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Cyber Timez. News Archive</title>
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+        <link rel="stylesheet" href="./Cyber Timez. News Archive_files/icon">
+    <link rel="stylesheet" href="./Cyber Timez. News Archive_files/font-awesome.min.css">
+
+    
+    <link href="./Cyber Timez. News Archive_files/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css">
+<link href="./Cyber Timez. News Archive_files/materialize.css" rel="stylesheet" type="text/css">
+<link href="./Cyber Timez. News Archive_files/styles.css" rel="stylesheet" type="text/css">
+
+    <script async="" src="./Cyber Timez. News Archive_files/analytics.js"></script><script src="./Cyber Timez. News Archive_files/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="./Cyber Timez. News Archive_files/jquery.validate.min.js" type="text/javascript"></script>
+<script src="./Cyber Timez. News Archive_files/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+<script src="./Cyber Timez. News Archive_files/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="./Cyber Timez. News Archive_files/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="./Cyber Timez. News Archive_files/public.common.js" type="text/javascript"></script>
+<script src="./Cyber Timez. News Archive_files/public.ajaxcart.js" type="text/javascript"></script>
+<script src="./Cyber Timez. News Archive_files/materialize.min.js" type="text/javascript"></script>
+
+    
+    
+    
+    
+    
+<link rel="shortcut icon" href="http://www.cybertimez.com/favicon.ico">
+</head>
+<body>
+    
+
+
+<div class="ajax-loading-block-window" style="display: none">
+</div>
+<div id="dialog-notifications-success" title="Notification" style="display:none;">
+</div>
+<div id="dialog-notifications-error" title="Error" style="display:none;">
+</div>
+<div id="bar-notification" class="bar-notification">
+    <span class="close" title="Close">&nbsp;</span>
+</div>
+
+
+
+
+<!--[if lte IE 7]>
+    <div style="clear:both;height:59px;text-align:center;position:relative;">
+        <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">
+            <img src="/Themes/GrandNodeTheme/Content/images/ie_warning.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+    </div>
+<![endif]-->
+
+
+<div class="master-wrapper-page">
+    
+    
+
+<div class="header">
+    
+    <div class="header-upper">
+        <div class="container">
+            <div class="header-selectors-wrapper">
+                
+
+                
+            </div>
+            <div class="header-links-wrapper">
+                <div class="header-links">
+    <ul>
+        
+            <li>
+                <a href="http://www.cybertimez.com/register">
+                    <span class="account-register-label">Register</span>
+                    <span class="material-icons left tiny">person</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.cybertimez.com/login">
+                    <span class="account-login-label">Log in</span>
+                    <span class="material-icons left tiny">input</span>
+                </a>
+            </li>
+                            <li>
+                <a href="http://www.cybertimez.com/wishlist">
+                    <span class="material-icons left tiny">favorite</span>
+                    <span class="wishlist-label">Wishlist</span>
+                    <span class="wishlist-qty">(0)</span>
+                </a>
+            </li>
+        
+
+        
+    </ul>
+    <script type="text/javascript">
+        $(function () {
+            $(AjaxCart.topcartselector).html('(0)');
+        });
+    </script>
+
+
+
+    <script type="text/javascript">
+    $(function () {
+        $(AjaxCart.topcartselector).html('(0)');
+    });
+    </script>
+
+            <script type="text/javascript">
+            $(document).ready(function () {
+                $('.header').on('mouseenter', '.topcart', function () {
+                    $('#flyout-cart').addClass('active');
+                });
+                $('.header').on('mouseleave', '.topcart', function () {
+                    $('#flyout-cart').removeClass('active');
+                });
+            });
+        </script>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container header-lower">
+        <div class="row">
+            <div class="header-logo col s12 m3">
+                <a href="http://www.cybertimez.com/">
+                    <img title="Cyber Timez" alt="Cyber Timez" src="./Cyber Timez. News Archive_files/logo.png">
+                </a>
+            </div>
+            <div class="search-box input-field col s12 m6">
+                <form action="http://www.cybertimez.com/search" id="small-search-box-form" method="get" novalidate="novalidate">    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="search-box-text ui-autocomplete-input" id="small-searchterms" autocomplete="off" name="q">
+    <label for="small-searchterms">Search store</label>
+    <button class="btn waves-effect waves-light" type="submit" name="action">
+        <i class="material-icons">search</i>
+    </button>
+        <script type="text/javascript">
+            $("#small-search-box-form").submit(function(event) {
+                if ($("#small-searchterms").val() == "") {
+                    alert('Please enter some search keyword');
+                    $("#small-searchterms").focus();
+                    event.preventDefault();
+                }
+            });
+        </script>
+        
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#small-searchterms').autocomplete({
+                            delay: 500,
+                            minLength: 3,
+                            source: '/catalog/searchtermautocomplete',
+                            appendTo: '.search-box',
+                            select: function(event, ui) {
+                                $("#small-searchterms").val(ui.item.label);
+                                setLocation(ui.item.producturl);
+                                return false;
+                            }
+                        })
+                        .data("ui-autocomplete")._renderItem = function(ul, item) {
+                            var t = item.label;
+                            //html encode
+                            t = htmlEncode(t);
+                            return $("<li></li>")
+                                .data("item.autocomplete", item)
+                                .append("<a><span>" + t + "</span></a>")
+                                .appendTo(ul);
+                        };
+                });
+            </script>
+        
+</form>
+            <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="display: none;"></ul></div>
+            <div class="col s12 m3" id="topcartlink">
+                <div class="topcart">
+                    <a class="btn waves-effect waves-light" href="http://www.cybertimez.com/cart">
+                        <span class="cart-label">Shopping cart</span>
+                        <span class="cart-qty">(0)</span>
+                        <i class="material-icons left">shopping_cart</i>
+                    </a>
+                    <div id="flyout-cart" class="flyout-cart">
+    <div class="mini-shopping-cart">
+        <div class="count">
+You have no items in your shopping cart.        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        AjaxCart.init(false, '.topcart .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+    </script>
+    <div class="header-menu">
+        
+<!--//subcategories--> 
+
+
+
+<!--//categories-->
+
+<!--//categories on mobile-->
+
+
+
+
+
+<nav>
+    <div class="container nav-wrapper">
+
+        <!-- mobile side menu -->
+        <a href="http://www.cybertimez.com/news#" data-activates="slide-out" class="button-collapse">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="side-nav" id="slide-out" style="left: -250px;">
+            
+            
+            <li class="bold"><a href="http://www.cybertimez.com/">Home</a></li>
+
+
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li class="bold">
+                <a class="collapsible-header waves-effect waves-green">
+                    Vision Products
+                </a>
+                    <div class="collapsible-body" style="">
+                        <ul>
+    <li>
+        <a href="http://www.cybertimez.com/vuzix-accessories">
+            Vuzix Accessories
+        </a>
+    </li>
+                        </ul>
+                    </div>
+
+            </li>
+        </ul>
+    </li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li class="bold">
+                <a class="collapsible-header waves-effect waves-green" href="http://www.cybertimez.com/hearing-products">
+                    Hearing Products
+                </a>
+                    <div class="collapsible-body" style="">
+                        <ul>
+                        </ul>
+                    </div>
+
+            </li>
+        </ul>
+    </li>
+            <li class="bold"><a href="http://www.cybertimez.com/news">News</a></li>
+                <li class="bold"><a href="http://www.cybertimez.com/about-us">About us</a></li>
+                <li class="bold"><a href="http://www.cybertimez.com/contactus">Contact Us</a></li>
+                <li class="bold"><a href="http://www.cybertimez.com/partners">Partners</a></li>
+                            <li class="bold"><a href="http://www.cybertimez.com/boards">Forums</a></li>
+
+        </ul>
+
+
+
+        <!-- top-menu -->
+        <ul class="top-menu">
+            
+
+            
+            <li><a href="http://www.cybertimez.com/">Home</a></li>
+
+            
+    <li>
+        <a class="dropdown-button" href="http://www.cybertimez.com/vision-products" data-activates="dropdown1">
+            Vision Products
+        </a><ul id="dropdown1" class="dropdown-content">
+    <li>
+        <a href="http://www.cybertimez.com/vuzix-accessories">
+            Vuzix Accessories
+        </a>
+    </li>
+                </ul>
+
+                
+
+
+    </li>
+    <li>
+        <a class="dropdown-button" href="http://www.cybertimez.com/hearing-products" data-activates="dropdown3">
+            Hearing Products
+        </a>
+
+
+
+    </li>
+            <li><a href="http://www.cybertimez.com/news">News</a></li>
+                <li><a href="http://www.cybertimez.com/about-us">About us</a></li>
+                <li><a href="http://www.cybertimez.com/contactus">Contact Us</a></li>
+                <li><a href="http://www.cybertimez.com/partners">Partners</a></li>
+                        <li><a href="http://www.cybertimez.com/boards">Forums</a></li>
+            
+        </ul>
+    </div>
+
+</nav>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".button-collapse").sideNav();
+        $(".collapsible").collapsible();
+
+        $(".dropdown-button").dropdown({
+            hover: true
+        });
+    });
+</script>
+
+
+    </div>
+    <div class="container">
+        
+
+        <div class="master-column-wrapper">
+            
+
+<div class="side-2">
+
+    <div class="block block-category-navigation">
+        <div class="waves-effect title">
+            <h5>Categories</h5>
+        </div>
+        <div class="listbox">
+            <ul class="list">
+    <li class="inactive">
+        <a href="http://www.cybertimez.com/vision-products">Vision Products
+        </a>
+
+    </li>
+    <li class="inactive">
+        <a href="http://www.cybertimez.com/hearing-products">Hearing Products
+        </a>
+
+    </li>
+    <li class="inactive">
+        <a href="http://www.cybertimez.com/smart-watches">Smart Watches
+        </a>
+
+    </li>
+            </ul>
+        </div>
+    </div>
+    <div class="block block-popular-tags">
+        <div class="waves-effect title">
+            <h5>Popular tags</h5>
+        </div>
+        <div class="listbox">
+            <div class="tags">
+                <ul>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/4/accessible">accessible</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/8/accessories">accessories</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/14/android-wear">android wear</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/3/blind">blind</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/1/cyber-eyez">cyber eyez</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/11/deaf">deaf</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/6/glasses">glasses</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/10/hearing-loss">hearing loss</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/12/high-frequency-hearing-loss">high frequency hearing loss</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/2/low-vision">low vision</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/7/smart-glasses">smart glasses</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/15/smart-watch">smart watch</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/9/vuzix">vuzix</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/5/wearable">wearable</a></li>
+                        <li><a class="chip" href="http://www.cybertimez.com/producttag/13/wearable-alert-system">wearable alert system</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center-2">
+    
+    
+<div class="page news-list-page">
+    <div class="page-title">
+        <a href="http://www.cybertimez.com/news/rss/1" class="link-rss" title="Click here to be informed automatically when we add new items to our site">RSS</a>
+        <h1>News</h1>
+    </div>
+    <div class="page-body">
+        
+        <div class="row">
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/gallaudet-university-providing-interns">Gallaudet University Providing Interns</a>
+                        <span class="card-date">26/05/2016</span>
+                    </div>
+                    <div class="card-content">
+                        We're thrilled to be working with Gallaudet University providing internships to several students.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/gallaudet-university-providing-interns&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/cyber-timez-wins-ctia-best-iot-company">Cyber Timez Wins CTIA Best IoT Company!</a>
+                        <span class="card-date">08/09/2015</span>
+                    </div>
+                    <div class="card-content">
+                        After several rounds of competition, a crazy travel schedule and conference setup, Cyber Timez pulled the WIN for Best Internet of Things Company at the annual CTIA conference in Las Vegas.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/cyber-timez-wins-ctia-best-iot-company&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/emerge2015">Cyber Timez Selected for EMERGE</a>
+                        <span class="card-date">08/06/2015</span>
+                    </div>
+                    <div class="card-content">
+                        Cyber Timez was selected from hundreds of companies to join the EMERGE Startup Accelerator Program in Dallas, TX for a 12 week program.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/emerge2015&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/destinationinnovation2015">Cyber Timez Wins Destination Innovation Award</a>
+                        <span class="card-date">30/04/2015</span>
+                    </div>
+                    <div class="card-content">
+                        After three rounds of voting including an online poll by the Washington Post, live user poll at the event and finally judge's votes Cyber Timez was victorious receiving the Destination Innovation Award for Wearables and Robotics.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/destinationinnovation2015&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/dccilpilotbegins">DC Center for Independent Living Begins Pilot Program</a>
+                        <span class="card-date">16/04/2015</span>
+                    </div>
+                    <div class="card-content">
+                        CyberTimez will be working with the DC Centers for Independent Living to run a pilot program using Cyber Armz, Eyez and Earz leading up to the Independence Through Technology Roundtable Summit.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/dccilpilotbegins&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/ces2015">Cyber Timez to Present During CES 2015</a>
+                        <span class="card-date">05/01/2015</span>
+                    </div>
+                    <div class="card-content">
+                        Cyber Timez has been invited by Tech Cocktail to present the Cyber Armz project at the DADO Connected Consumer event on Wednesday 7 January.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/ces2015&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/modevcon2014">Cyber Timez in Startup Alley at MoDevCon 2014</a>
+                        <span class="card-date">12/12/2014</span>
+                    </div>
+                    <div class="card-content">
+                        Cyber Timez was invited to participate in Startup Alley at MoDevCon 2014. We presented a brand new Cyber Armz prototype that got rave reviews.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/modevcon2014&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/wearablesthingsconference">Wearables+Things Conference 2014</a>
+                        <span class="card-date">21/10/2014</span>
+                    </div>
+                    <div class="card-content">
+                        Cyber Timez representatives attended the Wearables+Things conference sponsored by MoDev October 20-21 2014. Great presentations, lots of good information and presented an award from Intel.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/wearablesthingsconference&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+                <div class="col s12 card">
+                    <div class="card-content">
+                        <a class="card-title" href="http://www.cybertimez.com/wearablesthings">Cyber Earz Development Started at the Wearables+Things Hackathon</a>
+                        <span class="card-date">19/10/2014</span>
+                    </div>
+                    <div class="card-content">
+                        The Cyber Earz project got its first prototype developed during a Hackathon sponsored by MoDev. Received "Best Use of Intel Technology" award.
+                    </div>
+                    <div class="card-action">
+                        <button onclick="location.href=&#39;/wearablesthings&#39;" class="btn waves-effect waves-light" type="submit">details</button>
+                    </div>
+                    
+                </div>
+        </div>
+
+        
+    </div>
+</div>
+
+    
+</div>
+
+        </div>
+        
+    </div>
+    
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col 14 offset-12 l3 m4 s12 footer-block">
+                <h5 class="title waves-effect">Information</h5>
+                <ul class="list">
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/about-us">About us</a></li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/contactus">Contact Us</a></li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/partners">Partners</a></li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/shipping-returns">Shipping</a></li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/warranty-support">Warranty Support</a></li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/applyvendor">Value Added Resellers</a></li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/conditions-of-use">Conditions of Use</a></li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/privacy-notice">Privacy notice</a></li>
+                    
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/sitemap">Sitemap</a></li>
+
+                </ul>
+            </div>
+            <div class="col 14 offset-12 l3 m4 s12 footer-block">
+                <h5 class="title waves-effect">Customer service</h5>
+                <ul class="list">
+                    <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/search">Search</a> </li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/news">News</a></li>
+                                            <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/blog">Blog</a></li>
+                                            <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/boards">Forums</a></li>
+                                            <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/recentlyviewedproducts">Recently viewed products</a></li>
+                                            <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/compareproducts">Compare products list</a></li>
+                                            <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/newproducts">New products</a></li>
+                                    </ul>
+            </div>
+            <div class="col 14 offset-12 l3 m4 s12 footer-block">
+                <h5 class="title waves-effect">My account</h5>
+                <ul class="list">
+                    <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/customer/info">My account</a></li>
+                    <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/order/history">Orders</a></li>
+                    <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/customer/addresses">Addresses</a></li>
+                        <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/cart">Shopping cart</a></li>
+                                            <li><a class="grey-text text-darken-1" href="http://www.cybertimez.com/wishlist">Wishlist</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col 14 offset-12 l3 m12 s12 follow-us">
+                <h5 class="">Follow us</h5>
+                <ul class="list social">
+                        <li class="facebook"><a class="grey-text text-darken-1" href="https://www.facebook.com/thecybertimez/" target="_blank"><i class="fa fa-2x fa-facebook-square"></i><span class="sr-only">facebook</span></a></li>
+                                            <li class="twitter"><a class="grey-text text-darken-1" href="https://twitter.com/thecybertimez" target="_blank"><i class="fa fa-2x fa-twitter-square"></i><span class="sr-only">twitter</span></a></li>
+                                            <li class="rss"><a class="grey-text text-darken-1" href="http://www.cybertimez.com/news/rss/1"><i class="fa fa-2x fa-rss-square"></i><span class="sr-only">RSS feed</span></a></li>
+                                            <li class="youtube"><a class="grey-text text-darken-1" href="https://www.youtube.com/channel/UCDUP5FXNfSsuBVYmz7P87DQ" target="_blank"><i class="fa fa-2x fa-youtube-square"></i><span class="sr-only">YouTube</span></a></li>
+                                            <li class="google-plus"><a class="grey-text text-darken-1" href="https://business.google.com/b/114282731646158612693/" target="_blank"><i class="fa fa-2x fa-google-plus-square"></i><span class="sr-only">Google Plus</span></a></li>
+                </ul>                
+                <script type="text/javascript">
+    $(function () {
+        $("<label for=\"newsletter-email\" style=\"clear:both;\" class=\"sr-only\">Newsletter Email Address:</label>").insertBefore($("#newsletter-email"));
+    });
+</script>
+
+<div class="newsletter">
+    <div>
+        <h5>Newsletter</h5>
+    </div>
+    <div class="newsletter-subscribe" id="newsletter-subscribe-block">
+        <div class="newsletter-email">
+
+            <label for="newsletter-email" style="clear:both;" class="sr-only active">Newsletter Email Address:</label><input class="newsletter-subscribe-text" id="newsletter-email" name="NewsletterEmail" placeholder="Enter your email here..." title="Newsletter Email Address" type="text" value="">
+            
+            <button type="button" value="Subscribe" id="newsletter-subscribe-button" class="btn waves-effect waves-light newsletter-subscribe-button">
+                Subscribe
+            </button>
+
+        </div>
+        <div class="newsletter-validation">
+            <span id="subscribe-loading-progress" style="display: none;" class="please-wait">Wait...</span>
+            <span class="field-validation-valid" data-valmsg-for="NewsletterEmail" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+    <div class="newsletter-result" id="newsletter-result-block"></div>
+    <script type="text/javascript">
+        function newsletter_subscribe(subscribe) {
+            var subscribeProgress = $("#subscribe-loading-progress");
+            subscribeProgress.show();
+            var postData = {
+                subscribe: subscribe,
+                email: $("#newsletter-email").val()
+            };
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: "/subscribenewsletter",
+                data: postData,
+                success: function(data) {
+                    subscribeProgress.hide();
+                    $("#newsletter-result-block").html(data.Result);
+                    if (data.Success) {
+                        $('#newsletter-subscribe-block').hide();
+                        $('#newsletter-result-block').show();
+                    } else {
+                        $('#newsletter-result-block').fadeIn("slow").delay(2000).fadeOut("slow");
+                    }
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    alert('Failed to subscribe.');
+                    subscribeProgress.hide();
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            $('#newsletter-subscribe-button').click(function () {
+                    newsletter_subscribe('true');
+            });
+            $("#newsletter-email").keydown(function (event) {
+                if (event.keyCode == 13) {
+                    $("#newsletter-subscribe-button").click();
+                    return false;
+                }
+            });
+        });
+    </script>
+
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            
+            <span class="grey-text text-darken-2 left">Copyright © 2016 Cyber Timez. All rights reserved.</span>
+        </div>
+    </div>
+    
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.footer-block .title').click(function () {
+            var e = window, a = 'inner';
+            if (!('innerWidth' in window)) {
+                a = 'client';
+                e = document.documentElement || document.body;
+            }
+
+            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
+
+            if (result.width < 769) {
+                $(this).siblings('.list').slideToggle('slow');
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.block .title').click(function () {
+            var e = window, a = 'inner';
+            if (!('innerWidth' in window)) {
+                a = 'client';
+                e = document.documentElement || document.body;
+            }
+
+            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
+
+            if (result.width < 1001) {
+                $(this).siblings('.listbox').slideToggle('slow');
+            }
+        });
+
+        $('.page .page-body div:not([class]) ul').addClass("pagination");
+    });
+</script>
+
+</div>
+
+<!-- Google code for Analytics tracking -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-57653539-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+    
+    
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+
+
+<div class="hiddendiv common"></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
